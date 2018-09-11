@@ -58,10 +58,10 @@
 		82BD96AB2148211E00621148 /* Stars-with-Luis */ = {
 			isa = PBXGroup;
 			children = (
-				82BD96C7214824B000621148 /* View */,
-				82BD96C8214824B500621148 /* View Controller */,
 				82BD96C52148249E00621148 /* Model */,
 				82BD96C6214824A400621148 /* Model Controller */,
+				82BD96C7214824B000621148 /* View */,
+				82BD96C8214824B500621148 /* View Controller */,
 				82BD96BE214821E400621148 /* Supporting files */,
 			);
 			path = "Stars-with-Luis";

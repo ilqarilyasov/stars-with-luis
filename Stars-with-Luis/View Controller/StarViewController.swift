@@ -39,6 +39,7 @@ class StarViewController: UIViewController {
               let distance = Double(distanceString) else { return }
         
         starController.createStar(withName: name, distance: distance)
+        starController.saveToPersistentStore()
     }
     
 }
