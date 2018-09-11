@@ -40,10 +40,16 @@
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lhd-OF-le3" userLabel="List Stars">
                                                 <rect key="frame" x="0.0" y="0.0" width="175.5" height="30"/>
                                                 <state key="normal" title="List Stars"/>
+                                                <connections>
+                                                    <action selector="listStarButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="deS-Dh-m7K"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sla-dO-b30" userLabel="Create">
                                                 <rect key="frame" x="183.5" y="0.0" width="175.5" height="30"/>
                                                 <state key="normal" title="Create"/>
+                                                <connections>
+                                                    <action selector="createButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3MX-fs-Ybr"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -65,6 +71,11 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="distanceTextField" destination="T9W-aG-lco" id="lso-Pt-hYF"/>
+                        <outlet property="starListTextView" destination="2QX-nj-WnK" id="bPw-jY-2W5"/>
+                        <outlet property="starNameTextField" destination="tCJ-dn-Xig" id="XtU-Qx-5E9"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

@@ -9,27 +9,36 @@
 import UIKit
 
 class StarViewController: UIViewController {
-
+    
+    // MARK: - Properties
+    @IBOutlet weak var starNameTextField: UITextField!
+    @IBOutlet weak var distanceTextField: UITextField!
+    @IBOutlet weak var starListTextView: UITextView!
+    
+    let starController = StarController()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+        
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    // MARK: - Functions
+    @IBAction func listStarButtonTapped(_ sender: Any) {
+        var output = ""
+        
+        for star in starController.stars {
+            output += "\(star.name) is \(star.distance) light years away.\n"
+        }
+        
+        starListTextView.text = output
     }
-    */
 
+    @IBAction func createButtonTapped(_ sender: Any) {
+        guard let name = starNameTextField.text,
+              let distanceString = distanceTextField.text,
+              let distance = Double(distanceString) else { return }
+        
+        starController.createStar(withName: name, distance: distance)
+    }
+    
 }

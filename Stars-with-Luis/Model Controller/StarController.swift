@@ -7,3 +7,14 @@
 //
 
 import Foundation
+
+class StarController {
+    private(set) var stars = [Star]()
+    
+    func createStar(withName name: String, distance: Double) {
+        let star = Star(name: name, distance: distance)
+        stars.append(star)
+    }
+    
+    
+}

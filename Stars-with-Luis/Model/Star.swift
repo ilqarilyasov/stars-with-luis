@@ -11,6 +11,4 @@ import Foundation
 struct Star: Codable {
     var name: String
     var distance: Double
-    
-    
 }
