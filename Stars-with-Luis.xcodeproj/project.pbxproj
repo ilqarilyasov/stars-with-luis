@@ -54,14 +54,22 @@
 		82BD96AB2148211E00621148 /* Stars-with-Luis */ = {
 			isa = PBXGroup;
 			children = (
-				82BD96AC2148211E00621148 /* AppDelegate.swift */,
 				82BD96AE2148211E00621148 /* ViewController.swift */,
 				82BD96B02148211E00621148 /* Main.storyboard */,
+				82BD96BE214821E400621148 /* Supporting files */,
+			);
+			path = "Stars-with-Luis";
+			sourceTree = "<group>";
+		};
+		82BD96BE214821E400621148 /* Supporting files */ = {
+			isa = PBXGroup;
+			children = (
+				82BD96AC2148211E00621148 /* AppDelegate.swift */,
 				82BD96B32148212000621148 /* Assets.xcassets */,
 				82BD96B52148212000621148 /* LaunchScreen.storyboard */,
 				82BD96B82148212000621148 /* Info.plist */,
 			);
-			path = "Stars-with-Luis";
+			path = "Supporting files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -281,7 +289,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = "Stars-with-Luis/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Stars-with-Luis/Supporting files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -298,7 +306,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = "Stars-with-Luis/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Stars-with-Luis/Supporting files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
